@@ -16,7 +16,21 @@ pnpm add @opencode-ai/foo-plugin
 ## 사용법
 
 ```typescript
-import { foo } from "@opencode-ai/foo-plugin";
+import { foo } from '@opencode-ai/foo-plugin';
 
 // OpenCode 애플리케이션에 플러그인 등록
 ```
+
+## API
+
+### foo
+
+플러그인 함수
+
+| Parameter | Type   | Description                  |
+| --------- | ------ | ---------------------------- |
+| client    | Client | OpenCode 클라이언트 인스턴스 |
+
+## License
+
+MIT
