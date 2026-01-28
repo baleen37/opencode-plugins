@@ -1,0 +1,31 @@
+{
+  "name": "@opencode-ai/foo-plugin",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Foo plugin - simple greeting and logging example",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "check": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "lint": "echo \"No linter configured\""
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
